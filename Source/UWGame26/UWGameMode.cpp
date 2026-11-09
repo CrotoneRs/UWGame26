@@ -19,9 +19,9 @@ void AUWGameMode::BeginPlay()
 {
     Super::BeginPlay();
 
-    if (AUWGameState* GameState = GetGameState<AUWGameState>())
+    if (AUWGameState* UWGameState = GetGameState<AUWGameState>())
     {
-        GameState->RemainingTime = 60.0f;
+        UWGameState->RemainingTime = 60.0f;
     }
 
     // LOGs
